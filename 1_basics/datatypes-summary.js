@@ -16,7 +16,7 @@ let userEmail;  // undefined
 
 const Id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(Id===anotherId);
+// console.log(Id===anotherId);
 
 // Reference(Nonprimitive)
 
@@ -32,3 +32,29 @@ let myobj ={
 const myfunction =function(){
     console.log("helllo world");
 }
+
+// +++++++++++++++++++++++++++++++++++++++++++
+ 
+// stack (primitive). heap(nonprimitive)
+
+  // stack ke andar copy hi milta hai
+  // heap ke andar direct reference(original value)
+
+let myYoutubeName = "gaveshtomdotcom"
+
+let anothername = myYoutubeName
+anothername = "chaiaurcode"
+console.log(myYoutubeName);
+console.log(anothername);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let usertwo = userOne
+
+usertwo.email = "gavesh@google.com"
+
+console.log(userOne.email);
+console.log(usertwo.email);
