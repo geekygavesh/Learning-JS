@@ -23,7 +23,7 @@ const obj2 = {3:"c",4:"d"}
 // const obj3 = Object.assign({},obj1,obj2)
 
 const obj3 = {...obj1,...obj2}
-console.log(obj3);
+// console.log(obj3);
 
 
 const users = [
@@ -41,7 +41,32 @@ const users = [
     },
 ]
 users[1].id
-console.log(tinderuser);
+// console.log(tinderuser);
 
-console.log(Object.keys(tinderuser)); // array output aya
-console.log(Object.entries(tinderuser)); // array ke andr array output aya
+// console.log(Object.keys(tinderuser)); // array output aya
+// console.log(Object.entries(tinderuser)); // array ke andr array output aya
+
+
+const course = {
+    coursename : "JS in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course // curly brackets mtlb destructuring kri zari
+
+console.log(instructor);
+
+// {
+//     "name": "hitsh",
+//     "coursename" : "js in hindi",
+//     "price":"free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
