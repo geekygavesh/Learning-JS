@@ -22,3 +22,13 @@ const chai = function(){
     let username = "gavesh"
     console.log(this.username);
 }
+// chai()
+
+// const addtwo = (num1,num2) =>{
+//     return num1 + num2       // explicit 
+// }
+// const addtwo = (num1,num2) =>  (num1 + num2)  // implicit
+
+const addtwo = (num1,num2) => ( {username : "hitesh"})  // in case of object 
+    
+console.log(addtwo(3,4));
